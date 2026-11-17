@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculaotr">
-        <div class="display">
-            <div id="previous-operand" class="previous-operand"></div>
-            <div id="current-operand" class="current-operand"></div>
-        </div>
+  <div class="calculator-wrapper">
+    <div class="display">
+      <div id="previous-operand" class="previous-operand"></div>
+      <div id="current-operand" class="current-operand">0</div>
     </div>
 
-    <div class="buttons-grid">
-        <button id="clear-btn" class="span-two" btn-control>AC</button>
-        <button id="delete-btn" c;ass="btn-control">DEL</button>
-        <button class="btn-operator" data-operator="/">÷</button>
 
+    <div class="calculator">
+      <div class="buttons-grid">
+        <button id="clear-btn" class="span-two btn-control">AC</button>
+        <button id="delete-btn" class="btn-control">DEL</button>
+        <button class="btn-operator" data-operator="/">÷</button>
 
         <button class="btn-number" data-number>7</button>
         <button class="btn-number" data-number>8</button>
@@ -38,8 +38,10 @@
         <button id="decimal-btn" class="btn-number">.</button>
         <button class="btn-number" data-number>0</button>
         <button id="equals-btn" class="span-two btn-equals">=</button>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
